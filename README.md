@@ -15,8 +15,8 @@ Run `nx test TypeRouter` to execute the unit tests via [Jest](https://jestjs.io)
 ```ts
 import { createHashHistory, createRouter } from '@type-router'
 
-import HomeView from './HomeView.vue'
-import AboutView from './AboutView.vue'
+import HomeView from './HomeView.ts'
+import AboutView from './AboutView.ts'
 
 const routes = [
   { path: '/', component: HomeView },
