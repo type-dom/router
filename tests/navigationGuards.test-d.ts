@@ -1,4 +1,4 @@
-import { expectTypeOf, describe, it } from 'vitest'
+// import { expectTypeOf, describe, it } from 'vitest'
 import {
   createRouter,
   createWebHistory,

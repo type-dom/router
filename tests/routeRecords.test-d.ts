@@ -1,6 +1,6 @@
-import { describe, it } from 'vitest'
+// import { describe, it } from 'vitest'
 import type { RouteLocationNormalized, RouteRecordRaw } from './index'
-import { defineComponent } from 'vue'
+// import { defineComponent } from 'vue'
 
 const component = defineComponent({})
 const components = { default: component }
