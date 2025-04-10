@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": [
+      "vitest/globals",
+      "vitest/importMeta",
+      "vite/client",
+      "node",
+      "vitest"
+    ]
+  },
+  "include": [
+    "vite.config.ts",
+    "vite.config.mts",
+    "vitest.config.ts",
+    "vitest.config.mts",
+    "../../../router/test-dts/**/*.test.ts",
+    "../../../router/test-dts/**/*.spec.ts",
+    "../../../router/test-dts/**/*.test.tsx",
+    "../../../router/test-dts/**/*.spec.tsx",
+    "../../../router/test-dts/**/*.test.js",
+    "../../../router/test-dts/**/*.spec.js",
+    "../../../router/test-dts/**/*.test.jsx",
+    "../../../router/test-dts/**/*.spec.jsx",
+    "../../../router/test-dts/**/*.d.ts"
+  ]
+}
