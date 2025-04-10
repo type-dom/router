@@ -1,28 +1,34 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
+    "outDir": "./out-tsc/vitest",
     "types": [
       "vitest/globals",
       "vitest/importMeta",
       "vite/client",
       "node",
       "vitest"
-    ]
+    ],
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "vite.config.ts",
     "vite.config.mts",
     "vitest.config.ts",
     "vitest.config.mts",
-    "../../../router/test-dts/**/*.test.ts",
-    "../../../router/test-dts/**/*.spec.ts",
-    "../../../router/test-dts/**/*.test.tsx",
-    "../../../router/test-dts/**/*.spec.tsx",
-    "../../../router/test-dts/**/*.test.js",
-    "../../../router/test-dts/**/*.spec.js",
-    "../../../router/test-dts/**/*.test.jsx",
-    "../../../router/test-dts/**/*.spec.jsx",
-    "../../../router/test-dts/**/*.d.ts"
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "src/**/*.test.jsx",
+    "src/**/*.spec.jsx",
+    "src/**/*.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
   ]
 }

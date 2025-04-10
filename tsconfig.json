@@ -2,5 +2,30 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./packages/docs"
+    },
+    {
+      "path": "./packages/e2e"
+    },
+    {
+      "path": "./packages/playground"
+    },
+    {
+      "path": "./packages/router/test-dts"
+    },
+    {
+      "path": "./packages/tests"
+    },
+    {
+      "path": "./apps/docs-e2e"
+    },
+    {
+      "path": "./apps/docs"
+    },
+    {
+      "path": "./packages/router/tests"
+    }
+  ]
 }

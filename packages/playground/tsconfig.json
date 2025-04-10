@@ -1,5 +1,5 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.dom.json",
+//  "extends": "@type-dom/tsconfig/tsconfig.dom.json",
   "include": [
     "env.d.ts",
     "src/**/*.ts",
@@ -10,6 +10,7 @@
     "**/.*/"
   ],
   "compilerOptions": {
+    "module": "esnext",
     "allowJs": false,
     "baseUrl": ".",
     "paths": {
